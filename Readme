@@ -12,3 +12,17 @@ pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-
 1) Setup the Gmail API Client
 2) Fetch Unread Emails
 3) Classify and Create Report
+
+How to Run
+
+1) Authenticate: The authenticate_gmail function handles OAuth authentication, storing tokens for future use.
+2) Fetch Unread Emails: The get_unread_emails function retrieves all unread emails.
+3) Extract Sender Information: The get_message_details function extracts the sender's email address from each unread email.
+4) Create Report: The create_report function aggregates the count of unread emails by sender and prints the report.
+
+Notes:
+1) Place the credentials.json file in the same directory as your script.
+2) The first time you run the script, it will prompt you to authorize access to your Gmail account.
+3) The script creates a token.json file to store the access and refresh tokens.
+
+This script provides a basic framework to classify and report unread emails by sender. You can further enhance it by adding error handling, logging, and more advanced classification logic as needed.
