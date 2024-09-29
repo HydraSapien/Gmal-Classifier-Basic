@@ -1,0 +1,14 @@
+Custom classifier program to connect to Gmail and generate a report on all unread emails by their sender involves several steps. Below is a Python script that uses the Gmail API to achieve this. Make sure you have the necessary credentials and the Gmail API enabled for your Google account.
+
+  Prerequisites:
+
+Google Cloud Project: You need to create a project in the Google Cloud Console and enable the Gmail API.
+OAuth 2.0 Credentials: Download the credentials.json file for OAuth 2.0 client IDs.
+Python Libraries: Install the required libraries using pip.
+
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+  Step-by-Step Script:
+1) Setup the Gmail API Client
+2) Fetch Unread Emails
+3) Classify and Create Report
